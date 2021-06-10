@@ -3,8 +3,8 @@ package paquete6;
 
 public class Estudiante {
 
-    private String nombresEstudiante;
-    private String apellidosEstudiante;
+    protected String nombresEstudiante;
+    protected String apellidosEstudiante;
     private String identificacionEstudiante;
     private int edadEstudiante;
     

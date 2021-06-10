@@ -45,6 +45,7 @@ public class EstudianteDistancia extends Estudiante{
         return matriculaDistancia;
     }
     
+    @Override
     public String toString(){
         
         String cadenaFinal = String.format("Nombre: %s\n"
@@ -56,8 +57,8 @@ public class EstudianteDistancia extends Estudiante{
                 + "Total Matricula: %.2f\n",
                 nombresEstudiante,
                 apellidosEstudiante,
-                identificacionEstudiante,
-                edadEstudiante,
+                obtenerIdentificacionEstudiante(),
+                obtenerEdadEstudiante(),
                 obtenerCostoAsignatura(),
                 obtenerNumeroAsignaturas(),
                 obtenerMatriculaDistancia());

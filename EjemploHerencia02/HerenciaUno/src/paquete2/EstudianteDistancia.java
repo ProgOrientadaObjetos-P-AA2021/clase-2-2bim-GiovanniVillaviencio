@@ -2,11 +2,15 @@ package paquete2;
 
 public class EstudianteDistancia extends Estudiante{
     
+    
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
-    
-    
+    //Solo habia que crear el constructor y usar la palabra clave super 
+    public EstudianteDistancia(String n, String a, String i, int e){
+        super(n,a,i,e);
+    }
+ 
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;
@@ -27,7 +31,7 @@ public class EstudianteDistancia extends Estudiante{
     public int obtenerNumeroAsignaturas(){
         return numeroAsignaturas; 
     }
-
+    
     // 6. Método obtenerCostoAsignatura() : Real
     public double obtenerCostoAsignatura(){
         return costoAsignatura;
